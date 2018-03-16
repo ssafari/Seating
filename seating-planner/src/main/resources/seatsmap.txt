@@ -1,0 +1,8 @@
+Tables: A-8 B-8 C-7 D-7
+Hoying, party of 2
+
+Garcia, party of 6
+Owens, party of 6 dislikes Hoying, Taylor
+Smith, party of 1 dislikes Garcia
+Taylor, party of 2
+Reese, party of 7
