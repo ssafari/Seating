@@ -14,7 +14,7 @@ public class SeatingPlanner {
 		ArrayList<Guest> guestlist = new ArrayList<Guest>();
 		ArrayList<Table> tablelist = new ArrayList<Table>();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)) ;
-		System.out.print( "Your Selection : " ) ;
+		System.out.print( "Enter file name (full path): " ) ;
 		try {
 			String input = br.readLine();
 			// input: src/main/resources/seatsmap.txt
