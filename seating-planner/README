@@ -1,0 +1,40 @@
+Seating Planner
+---------------
+
+This application read from a text file the list of tables and parties.
+It parses the lines to extract tables and parties information and save 
+them in a separate lists.
+
+Functionalities:
+----------------
+
+Main function ask for file name and call utility class SeatingHelper to
+extract information from text file and creates tables and parties object.
+Objects are added to their respective lists.
+
+From SeatingHelper, seating function will start assigning the tables to
+the parties.  In order to do the seating, the list of tables and the list
+of parties are sorted on decreasing order. In this format the parties with
+higher numbers will be seated on the tables with higher capacity. If there
+is an equality in number then the party with dislike option gets the priority
+over the one without. This will helps to seat the parties with dislike option
+on any available table that can accept them. This way we can avoid the need to
+swap the parties at the tables.
+
+In case an error where a party can't find a table, the program will stop planning
+and exit the program.
+
+
+Execution:
+----------
+
+To run the application, build it first:  
+	mvn clean install
+ 	java -jar target/seating-planner-0.0.1-SNAPSHOT.jar
+
+
+Improvement:
+------------
+
+This program can be improved to avoid duplicate entries. We could use Set<T> interface 
+to store Parties and tables information.   

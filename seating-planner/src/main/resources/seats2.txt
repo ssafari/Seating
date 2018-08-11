@@ -1,0 +1,7 @@
+Tables: A-8 B-8 C-7 D-7
+Thornton, party of 8
+Garcia, party of 7
+Owens, party of 4
+Smith, party of 4 dislikes Reese, Owens
+Taylor, party of 3 dislikes Owens
+Reese, party of 3

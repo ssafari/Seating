@@ -8,6 +8,8 @@
   <properties>
 		<jdk.version>1.8</jdk.version>
 		<junit.version>4.11</junit.version>
+		<maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
 
 	<dependencies>
@@ -20,6 +22,15 @@
 	</dependencies>
   <build>
     <plugins>
+      <plugin>
+		 <groupId>org.apache.maven.plugins</groupId>
+		 <artifactId>maven-compiler-plugin</artifactId>
+		 <version>3.8.0</version>
+		 <configuration>
+		   <source>${jdk.version}</source>
+		   <target>${jdk.version}</target>
+		 </configuration>
+	  </plugin>
 	  <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -27,7 +38,9 @@
         <configuration>
             <archive>
                 <manifest>
-                    <mainClass>com.planner.seats.SeatingPlanner</mainClass>
+                <addClasspath>true</addClasspath>
+                <classpathPrefix>libs/</classpathPrefix>
+                    <mainClass>com.planner.SeatingPlanner</mainClass>
                 </manifest>
             </archive>
         </configuration>
